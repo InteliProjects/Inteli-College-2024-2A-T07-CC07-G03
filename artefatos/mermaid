@@ -1,0 +1,22 @@
+# My Mermaid Diagram
+
+```mermaid
+sequenceDiagram
+    participant User as Usuário
+    participant ELB as Load Balancer (ELB)
+    participant Backend1 as EC2 Privado (Backend 1)
+    participant Backend2 as EC2 Privado (Backend 2)
+    participant RDS as Banco de Dados (RDS)
+    participant Bastion as Bastion Host (Gerenciamento SSH)
+
+    User->>ELB: Acessa website via Load Balancer
+    ELB->>Backend1: Encaminha tráfego ao EC2 Privado 1
+    Backend1->>RDS: Requisição ao Banco de Dados
+    RDS-->>Backend1: Retorna dados
+    Backend1-->>ELB: Retorna resposta para o Load Balancer
+    ELB-->>User: Exibe resposta ao Usuário
+
+    Note right of Backend2: Load Balancer distribui tráfego<br>entre Backend1 e Backend2
+    User->>Bastion: Conexão SSH para gerenciamento
+    Bastion->>Backend1: SSH (Acesso ao EC2 Privado 1)
+    Bastion->>Backend2: SSH (Acesso ao EC2 Privado 2)

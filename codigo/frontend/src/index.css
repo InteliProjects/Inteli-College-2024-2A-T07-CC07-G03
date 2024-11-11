@@ -1,0 +1,81 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo base para o corpo da página */
+  body {
+    font-family: 'San Francisco', 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f5;  /* Uma cor de fundo mais suave */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Estilos para links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Estilos para o contêiner principal */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para títulos */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: #444;
+    font-family: 'San Francisco', 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Estilos para listas */
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding: 10px 0;
+  }
+  
+  /* Estilos para botões */
+  button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Exemplo de classe utilitária */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  

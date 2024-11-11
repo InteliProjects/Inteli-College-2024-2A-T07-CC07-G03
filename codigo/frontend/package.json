@@ -1,0 +1,30 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "O projeto visa criar uma solução de inventário distribuído para gerenciar estoques de múltiplos centros de distribuição e lojas. Nosso objetivo é maximizar a eficiência e a precisão na sincronização de estoques, contribuindo para a melhoria dos processos operacionais da empresa e a experiência dos clientes.",
+  "main": "App.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cascarias",
+  "license": "ISC",
+  "dependencies": {
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

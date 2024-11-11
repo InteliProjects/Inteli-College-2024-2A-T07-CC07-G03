@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fullstack-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fullstack
+  template:
+    metadata:
+      labels:
+        app: fullstack
+    spec:
+      containers:
+      - name: fullstack-container
+        image: marcelosaadi123/fullstack-app  # Your Docker image on Docker Hub
+        ports:
+        - containerPort: 5001  # Backend exposed on port 5001
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fullstack-service
+spec:
+  selector:
+    app: fullstack
+  ports:
+    - protocol: TCP
+      port: 80  # External port for users to access
+      targetPort: 5001  # Internal port where the backend listens (serves both frontend and backend)
+      nodePort: 30008  # NodePort to expose the service externally
+  type: NodePort  # Use NodePort to expose the app externally

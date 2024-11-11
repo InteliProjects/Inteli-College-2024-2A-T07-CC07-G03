@@ -1,0 +1,33 @@
+.products-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-item {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .product-item p {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  

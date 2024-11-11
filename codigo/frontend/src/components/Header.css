@@ -1,0 +1,35 @@
+.App-header {
+  background: linear-gradient(90deg, #6829A4 0%, #8A2BE2 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.App-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'San Francisco', sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  color: #dddddd;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
